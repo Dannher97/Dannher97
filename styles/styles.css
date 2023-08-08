@@ -1,0 +1,109 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Update the styles for the navigation bar */
+.navbar {
+    margin-bottom: 0; /* Remove the default margin */
+}
+
+.landing {
+    background-color: #333;
+    text-align: center;
+    padding: 10em 0;
+    color: #fff;
+}
+
+.landing h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.landing p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+/* Update the styles for the sections */
+section {
+    padding: 4em 0; /* Add more vertical spacing */
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+section p {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Add custom styles for links */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #555;
+}
+
+/* Add custom styles for the fixed-top navigation bar */
+.fixed-top {
+    background-color: #444;
+}
+
+.social-buttons {
+    margin-top: 2em;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 0.5em;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.2em;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons a.github {
+    background-color: #fff;
+}
+
+.social-buttons a.linkedin {
+    background-color: #fff;
+}
+
+.social-buttons a.instagram {
+    background-color: #fff;
+}
+
+.social-buttons a:hover {
+    background-color: #ffc20a; 
+}
+
+/* Center the Font Awesome icons within circular buttons */
+
+.social-buttons a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
