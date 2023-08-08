@@ -11,7 +11,7 @@ body {
 }
 
 .landing {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
     text-align: center;
     padding: 10em 0;
     color: #fff;
