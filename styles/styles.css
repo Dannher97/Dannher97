@@ -203,3 +203,47 @@ footer {
 .project-item:hover .project-info {
     opacity: 1;
 }
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Increased margin for spacing */
+}
+
+.circle-item {
+    text-align: center;
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to match the width */
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.circle-item:hover {
+    transform: scale(1.05);
+}
+
+.circle-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description-container p {
+    width: calc(20% - 20px);
+    font-size: 1em;
+}
