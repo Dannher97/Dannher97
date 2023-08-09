@@ -188,7 +188,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 194, 10, 0.8);
+    background-color: rgba(86, 86, 86, 0.8);
     color: #fff;
     padding: 1em;
     border-radius: 8px;
@@ -206,44 +206,88 @@ footer {
 
 .circle-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px; /* Increased margin for spacing */
+    justify-content: space-between; /* Adjusted to space between the circles */
+    flex-wrap: wrap; /* Wrap the circles to the next line if needed */
+    margin-top: 20px;
 }
 
 .circle-item {
     text-align: center;
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height to match the width */
+    width: calc(20% - 20px); /* Each circle occupies around 20% width with some spacing */
+    height: 200px; /* Fixed height for consistency */
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 8px; /* Not circular to provide cleaner visuals */
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    color: #333;
 }
 
 .circle-item:hover {
     transform: scale(1.05);
+    color: #ffc20a;
 }
 
 .circle-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 8px; /* Not circular to provide cleaner visuals */
     margin-bottom: 10px;
 }
 
 .description-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted to space between the descriptions */
+    flex-wrap: wrap; /* Wrap the descriptions to the next line if needed */
     margin-top: 10px;
     text-align: center;
+    width: 100%; /* Ensure descriptions span the full width */
+    color: #333;
 }
 
 .description-container p {
-    width: calc(20% - 20px);
+    width: 100%; /* Each description spans the full width */
     font-size: 1em;
+    margin-bottom: 10px; /* Added margin for spacing between descriptions */
+}
+
+.read-more-button-container {
+    margin-top: 30px; /* Adjust margin as needed */
+    margin-right: 30px;
+    text-align: right; /* Align the text to the left */
+}
+
+.read-more-button-container a.btn-link {
+    padding: 0; /* Remove padding from the button */
+    border: none; /* Remove the button border */
+    background: none; /* Remove the button background */
+    color: #737373; /* Use the primary color for link text */
+    font-size: 1em; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.read-more-button-container a.btn-link:hover {
+    color: #ffc20a; /* Change link color on hover */
+}
+
+.contact-buttons {
+    margin-top: 20px; /* Add spacing above the buttons */
+}
+
+.contact-buttons a.btn {
+    padding: 10px 20px; /* Add padding to top and bottom */
+    font-size: 1.1em; /* Increase font size for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #333; /* Add border with color #333 */
+    background-color: transparent; /* Transparent background */
+    color: #333; /* Text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.contact-buttons a.btn:hover {
+    background-color: #ffc20a; /* Change background color on hover */
+    color: #333; /* Change text color on hover */
+    text-decoration: none; /* Remove underline on hover */
 }
