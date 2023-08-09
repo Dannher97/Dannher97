@@ -8,7 +8,7 @@ body {
 /* Update the styles for the navigation bar */
 .navbar {
     margin-bottom: 0; /* Remove the default margin */
-    height: 70px;
+    height: 60px;
 }
 
 .landing {
@@ -48,6 +48,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
+    height: 80px;
 }
 
 /* Add custom styles for links */
@@ -56,6 +57,7 @@ footer {
     color: #fff;
     text-decoration: none;
     padding: 1em;
+    margin-right: 100px;
     font-family: 'Montserrat', sans-serif; /* Add the font-family property */
 }
 
@@ -303,4 +305,9 @@ footer {
     .circle-item {
         width: calc(50% - 20px); /* Each circle occupies around 50% width with some spacing */
     }
+}
+
+.navbar-brand .home-text {
+    color: #ffc20a; /* Change the color to yellow */
+    margin-left: 100px;
 }
